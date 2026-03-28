@@ -48,40 +48,40 @@ Da lì è possibile accedere a tutte le funzionalità tramite i pulsanti.
 # FAQ
 
 1) Si può migliorare?
-Sì, in molti modi, ad esempio aggiungendo la ricerca per una città specifica e altre funzionalità.
+   Sì, in molti modi, ad esempio aggiungendo la ricerca per una città specifica e altre funzionalità.
 
-2) Perché questa app?
-L’origine di questa app deriva da un progetto di Generation Italy:
-- AI Training for Software Developer Graduates v2
+3) Perché questa app?
+   L’origine di questa app deriva da un progetto di Generation Italy:
+   - AI Training for Software Developer Graduates v2
 
 3) È generata da IA?
-No, almeno inizialmente.
-Il README invece è 100% IA.
+   No, almeno inizialmente.
+   Il README invece è 100% IA.
 
-4) In che senso?
-Avevo già sviluppato in passato un’app meteo.
-Questo progetto nasce dall’unione di codice proveniente da più progetti, successivamente riorganizzato anche con l’aiuto dell’IA.
+5) In che senso?
+   Avevo già sviluppato in passato un’app meteo.
+   Questo progetto nasce dall’unione di codice proveniente da più progetti, successivamente riorganizzato anche con l’aiuto dell’IA.
 
-5) Che prompt hai usato?
-"Mantenendo la struttura, le funzioni e il corretto funzionamento, ristruttura il codice: (codice qui)"
-Manco a dirlo, ha rotto tutto.
-I prompt successivi sono serviti per sistemare i problemi iniziali.
+7) Che prompt hai usato?
+   "Mantenendo la struttura, le funzioni e il corretto funzionamento, ristruttura il codice: (codice qui)".
+   Manco a dirlo, ha rotto tutto.
+   I prompt successivi sono serviti per sistemare i problemi iniziali.
 
-6) Come funziona il codice?
-L’applicazione va avviata tramite main.py.
-Sono presenti alcuni bug che vengono gestiti o "soppressi".
+9) Come funziona il codice?
+   L’applicazione va avviata tramite main.py.
+   Sono presenti alcuni bug che vengono gestiti o "soppressi".
 
-7) Ci sono bug noti?
-Sì:
-- meteo.py, se lanciato come standalone, rimane aperto come processo "fantasma"
-- Se si chiude la finestra principale mentre la finestra meteo è attiva, possono verificarsi delle eccezioni
-
-Entrambi i problemi derivano da Tkinter.
+11) Ci sono bug noti?
+    Sì:
+    - meteo.py, se lanciato come standalone, rimane aperto come processo "fantasma"
+    - Se si chiude la finestra principale mentre la finestra meteo è attiva, possono verificarsi delle eccezioni
+    
+    Entrambi i problemi derivano da Tkinter.
 
 8) Hai intenzione di sistemarli?
-No.
+   No.
 
-9) Perché la UI?
-Generalmente sviluppo applicazioni pensate per essere distribuite come eseguibili.
-Comando utilizzato:
-pyinstaller --onefile --windowed --add-data ".env;." main.py
+10) Perché la UI?
+    Generalmente sviluppo applicazioni pensate per essere distribuite come eseguibili.
+    Comando utilizzato:
+    - pyinstaller --onefile --windowed --add-data ".env;." main.py
