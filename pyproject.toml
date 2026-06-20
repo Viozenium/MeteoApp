@@ -1,0 +1,36 @@
+[project]
+name = "meteo-app"
+version = "2.0.0"
+description = "Applicazione desktop Tkinter per la ricerca di città e la visualizzazione del meteo, basata sulle API gratuite di Open-Meteo."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Mizu" }
+]
+keywords = ["meteo", "weather", "tkinter", "open-meteo", "gui"]
+
+dependencies = [
+    "requests>=2.31",
+    "requests-cache>=1.1",
+    "retry-requests>=2.0",
+    "python-dotenv>=1.0",
+]
+
+[project.urls]
+Repository = "https://github.com/Viozenium"
+
+[project.optional-dependencies]
+build = [
+    "pyinstaller>=6.0",
+]
+
+[project.scripts]
+meteo-app = "main:meteo_window"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["main", "config", "api", "ui", "themes", "weather_codes", "info"]
